@@ -1,0 +1,12 @@
+
+while :
+do
+	let x1=$(($(($RANDOM%320))+200));
+	let y1=$(($(($RANDOM%100))+700));
+	let x2=$x1+$(($(($RANDOM%20))+1));
+	let y2=$y1+$(($(($RANDOM%180))+820));
+	let touchscreen=$(($(($RANDOM%20))+80))
+	input touchscreen swipe $x2 $y2  $x1 $y1  $touchscreen;
+	let s1=$(($(($RANDOM%5))+5));
+	sleep $s1 ;
+done;
