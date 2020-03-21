@@ -3,7 +3,6 @@
 while :
 do
 	monkey -p com.ss.android.ugc.livelite 1 ; #启动火山小视频
-	input tap  500 500;
 	sleep 300;
 	monkey -p com.ss.android.ugc.aweme.lite 1 ; #抖音极速版
 	sleep  300;
